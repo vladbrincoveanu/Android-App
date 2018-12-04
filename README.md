@@ -1,3 +1,3 @@
-# Android-App
+# ECHIPA__10__PIU__2018
 
 Aici ESSTE APLICATIA
