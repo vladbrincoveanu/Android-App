@@ -1,4 +1,3 @@
 # PIU 2018
-## Echipa nr. 10
-### Crowdsourcing platform
+## Echipa 10 - Platforma de Crowdsourcing
 
