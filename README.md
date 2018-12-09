@@ -1,3 +1,4 @@
-# ECHIPA__10__PIU__2018
+# PIU 2018
+## Echipa nr. 10
+### Crowdsourcing platform
 
-Aici ESSTE APLICATIA
