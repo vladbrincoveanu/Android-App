@@ -2,9 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/final_login_jesusssss"
+    android:orientation="vertical"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:orientation="vertical" >
+    android:visibility="visible">
 
 
     <TextView
@@ -18,8 +20,8 @@
     <EditText
         android:id="@+id/usernameField"
         android:layout_width="150dp"
-        android:layout_marginLeft="40dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
         android:ems="10"
         android:inputType="text" />
 
@@ -34,26 +36,29 @@
     <EditText
         android:id="@+id/passwordField"
         android:layout_width="150dp"
-        android:layout_marginLeft="40dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
         android:ems="10"
-        android:text=""
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:text="" />
 
     <Button
         android:id="@+id/loginButton"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
         android:layout_marginLeft="110dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="SignInClick"
         android:text="@string/sign_in"
-        android:onClick="SignInClick"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light" />
 
     <TextView
         android:id="@+id/loginStatus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="30dp"
         android:text="" />
 

@@ -1,11 +1,10 @@
-package paulap.calatour;
+package com.example.paulap.crowdsourcing;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
-
-import com.example.paulap.crowdsourcing.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,36 +21,29 @@ public class MainActivity extends AppCompatActivity {
         TextView password = findViewById(R.id.passwordField);
         TextView status = findViewById(R.id.loginStatus);
 
-        System.out.println("[DEBUG] Has been clicked");
-
-//        username.setText("");
-//        password.setText("");
-
-        System.out.println("[DEBUG] User: " + username.getText());
 
         if (username.getText().toString().equals("")) {
-            System.out.println("[DEBUG] User is emtpy ");
-        }
-
-
-        if (username.getText().toString() == "") {
-            System.out.println("[DEBUG] User if empty");
             status.setTextColor(getResources().getColor(R.color.colorAccent));
             status.setText(getString(R.string.empty_username));
         }
 
-        System.out.println("[DEBUG] Password: " + password.getText());
-        if (password.getText().toString() == "") {
-            System.out.println("[DEBUG] Password if empty");
+        if (password.getText().toString().equals("")) {
             status.setTextColor(getResources().getColor(R.color.colorAccent));
             status.setText(getString(R.string.empty_password));
         }
 
-        System.out.println("[DEBUG] Has checked if are not empty");
 
-        if (username.getText().toString() == "user" && password.getText().toString() == "pass") {
+        if (username.getText().toString().equals("user") && password.getText().toString().equals("pass")) {
+
+            // Successful login -> Redirect
             status.setTextColor(getResources().getColor(R.color.colorPrimary));
             status.setText(getString(R.string.successful_login));
+            Intent	intent	=	new Intent(this,drawer_menu.class);
+            startActivity(intent);
+        }
+        else {
+            status.setTextColor(getResources().getColor(R.color.colorAccent));
+            status.setText(getString(R.string.wrong_credentials));
         }
 
     }
