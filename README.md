@@ -1,3 +1,8 @@
-# ECHIPA__10__PIU__2018
+# PIU 2018
+## Echipa 10 - Platforma de Crowdsourcing
 
-Aici ESSTE APLICATIA
+Componenta echipei:
+   - Victor ALMASAN
+   - Vlad BRINCOVEANU
+   - Andrei KOSZORUS
+   - Paula PALTINISANU
