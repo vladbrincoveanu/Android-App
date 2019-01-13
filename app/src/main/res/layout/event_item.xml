@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+	<Button
+			android:text="Join"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/join" android:layout_alignParentTop="true" android:layout_marginTop="258dp"
+			android:layout_alignStart="@+id/imageEvent" style="@android:style/Widget.Material.Light.Button.Inset"
+			android:elevation="0dp" android:backgroundTint="@android:color/holo_blue_bright" android:onClick="Join"/>
+	<Button
+			android:text="Invite"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/invite"
+			style="@android:style/Widget.Material.Light.Button.Inset"
+			android:backgroundTint="@android:color/holo_blue_bright"
+			android:layout_alignEnd="@+id/imageEvent"
+			android:layout_alignTop="@+id/join"
+			android:onClick="Invite"/>
+	<ImageButton
+			android:layout_width="281dp"
+			android:layout_height="95dp" app:srcCompat="@drawable/eventimg"
+			android:id="@+id/imageEvent" android:layout_centerHorizontal="true" android:layout_alignParentTop="true"
+			android:layout_marginTop="62dp"/>
+	<TextView
+			android:text="TextView"
+			android:layout_width="279dp"
+			android:layout_height="64dp"
+			android:id="@+id/descriptionEvent" android:layout_alignParentTop="true" android:layout_marginTop="169dp"
+			android:layout_alignStart="@+id/join" android:textColor="@android:color/black"
+			tools:text='"dummy text"'/>
+	<TextView
+			android:text="Titlee"
+			android:layout_width="198dp"
+			android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_marginTop="26dp"
+			android:id="@+id/titleEvent" android:layout_alignStart="@+id/join" tools:text='"Dummy title"'
+			android:textColor="@android:color/holo_blue_dark" android:textSize="@dimen/activity_horizontal_margin"
+			android:layout_marginStart="44dp"/>
+</RelativeLayout>

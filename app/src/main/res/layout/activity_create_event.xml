@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+	<TextView
+			android:text="Daate Of Event"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/textView4" android:layout_centerHorizontal="true"
+			android:textSize="18sp" android:layout_alignParentTop="true" android:layout_marginTop="213dp"/>
+	<TextView
+			android:text="Create Event"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true" android:layout_marginTop="18dp" android:id="@+id/textview232"
+			android:layout_centerHorizontal="true" android:textColor="@android:color/holo_blue_dark"
+			android:textSize="24sp"/>
+	<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentStart="true" android:layout_alignParentTop="true"
+			android:layout_marginTop="81dp">
+
+		<android.support.design.widget.TextInputEditText
+				android:layout_width="429dp"
+				android:layout_height="wrap_content"
+				android:hint='"title"' android:id="@+id/titleCreateEvent"/>
+	</android.support.design.widget.TextInputLayout>
+	<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentStart="true" android:layout_alignParentTop="true"
+			android:layout_marginTop="159dp">
+
+		<android.support.design.widget.TextInputEditText
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint='"description"' android:id="@+id/descriptionCreateEvent"/>
+	</android.support.design.widget.TextInputLayout>
+	<CalendarView
+			android:layout_width="wrap_content"
+			android:layout_height="209dp"
+			android:layout_alignParentBottom="true" android:id="@+id/dateCreateEvent"
+			android:layout_centerHorizontal="true" android:layout_marginBottom="199dp"/>
+	<Spinner
+			android:id="@+id/categoryCreateEvent"
+			android:layout_width="349dp"
+			android:layout_height="wrap_content"
+			android:background="@android:drawable/btn_dropdown"
+			android:spinnerMode="dropdown"
+			android:layout_alignParentBottom="true" android:layout_marginBottom="91dp"
+			android:layout_centerHorizontal="true"/>
+	<TextView
+			android:text="Category"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/textView3" android:layout_centerHorizontal="true"
+			android:textSize="18sp" android:layout_alignParentBottom="true" android:layout_marginBottom="164dp"/>
+	<Button
+			android:text="Create"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+			android:layout_alignStart="@+id/dateCreateEvent" android:id="@+id/button"
+			android:layout_marginBottom="12dp"
+			android:onClick="CreateEvent"/>
+	<Button
+			android:text="Back"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/button2" android:layout_alignEnd="@+id/dateCreateEvent"
+			android:layout_alignTop="@+id/button"
+			android:onClick="CancelFromCreateEvent"/>
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+	<TextView
+			android:layout_width="87dp"
+			android:layout_height="36dp"
+			android:inputType="textPersonName"
+			android:text="Date"
+			android:ems="10"
+			android:clickable="false"
+			android:id="@+id/editText"
+			android:layout_alignTop="@+id/dateEventJoined" android:layout_alignStart="@+id/descriptionEventJoined"/>
+	<TextView
+			android:layout_width="87dp"
+			android:layout_height="32dp"
+			android:inputType="textPersonName"
+			android:text="Category"
+			android:ems="10"
+			android:clickable="false"
+			android:id="@+id/editText2"
+			android:layout_alignParentBottom="true" android:layout_marginBottom="169dp"
+			android:layout_alignStart="@+id/editText"/>
+	<TextView
+			android:text=" "
+			android:clickable="false"
+			android:layout_width="161dp"
+			android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_marginTop="36dp"
+			android:id="@+id/titleEventJoined" android:layout_centerHorizontal="true"
+			android:textColor="@android:color/holo_blue_dark"/>
+	<ImageView
+			android:layout_width="match_parent"
+			android:clickable="false"
+			android:layout_height="288dp" app:srcCompat="@drawable/eventimg"
+			android:id="@+id/imageEventJoined"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentTop="true" android:layout_marginTop="82dp"/>
+	<TextView
+			android:text="TextView"
+			android:clickable="false"
+			android:layout_width="319dp"
+			android:layout_height="68dp"
+			android:id="@+id/descriptionEventJoined"
+			android:layout_centerHorizontal="true" android:layout_below="@+id/imageEventJoined"/>
+	<TextView
+			android:layout_width="176dp"
+			android:clickable="false"
+			android:layout_height="32dp"
+			android:inputType="date"
+			android:ems="10"
+			android:id="@+id/dateEventJoined"
+			android:layout_alignEnd="@+id/descriptionEventJoined" android:layout_alignParentBottom="true"
+			android:layout_marginBottom="240dp"/>
+	<!--<EditText-->
+			<!--android:layout_width="69dp"-->
+			<!--android:layout_height="wrap_content"-->
+			<!--android:inputType="textPersonName"-->
+			<!--android:text="Date"-->
+			<!--android:ems="10"-->
+			<!--android:id="@+id/editText2"-->
+			<!--android:layout_alignStart="@+id/mapEventJoined" android:layout_alignParentBottom="true"-->
+			<!--android:layout_marginBottom="249dp"/>-->
+	<TextView
+			android:layout_width="172dp"
+			android:layout_height="38dp" android:layout_alignParentBottom="true"
+			android:id="@+id/categoryEventJoined" android:layout_marginBottom="171dp"
+			android:layout_alignStart="@+id/dateEventJoined"/>
+
+</RelativeLayout>

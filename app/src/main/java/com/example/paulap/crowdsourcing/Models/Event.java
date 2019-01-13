@@ -5,23 +5,33 @@ import android.location.Location;
 import java.util.Date;
 
 public class Event {
-    private Date data;
+    private String title;
+    private String data;
     private Location l;
     private String goal;
     private String category;
 
-    public Event(Date data, Location l, String goal, String category) {
+    public Event(String title,String data, Location l, String goal, String category) {
+        this.title =title;
         this.data = data;
         this.l = l;
         this.goal = goal;
         this.category = category;
     }
 
-    public Date getData() {
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getData() {
         return data;
     }
 
-    public void setData(Date data) {
+    public void setData(String data) {
         this.data = data;
     }
 
