@@ -1,10 +1,14 @@
-package com.example.paulap.crowdsourcing;
+package com.example.paulap.crowdsourcing.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.paulap.crowdsourcing.Adapters.IssueAdapter;
+import com.example.paulap.crowdsourcing.R;
+import com.example.paulap.crowdsourcing.drawer_menu;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             // Successful login -> Redirect
             status.setTextColor(getResources().getColor(R.color.colorPrimary));
             status.setText(getString(R.string.successful_login));
-            Intent	intent	=	new Intent(this,drawer_menu.class);
+            Intent	intent	=	new Intent(this,IssueActivity.class);
             startActivity(intent);
         }
         else {

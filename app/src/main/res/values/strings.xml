@@ -16,4 +16,11 @@
     <string name="action_settings">Settings</string>
     <string name="user_email">user_crowdsourcing@gmail.com</string>
     <string name="logged_user">Logged User</string>
+    <string-array name="issue_category">
+        <item>Spatii verzi</item>
+        <item>Rutier</item>
+        <item>Transport</item>
+    </string-array>
+    <string name="google_maps_api">AIzaSyBio6hgUJ827TGfEMQUOWJevZ0obryAaOM</string>
+
 </resources>
