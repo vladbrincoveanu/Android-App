@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "217297292613",
+    "firebase_url": "https://piu-crowdsource.firebaseio.com",
+    "project_id": "piu-crowdsource",
+    "storage_bucket": "piu-crowdsource.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217297292613:android:4a2a09049778389d",
+        "android_client_info": {
+          "package_name": "com.example.paulap.crowdsourcing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217297292613-e96eklvvi0kje4eo3mpesof14i9tfib4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjP9oAIsWkVMYyHnV1rwhKyOlbCla7xZE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
