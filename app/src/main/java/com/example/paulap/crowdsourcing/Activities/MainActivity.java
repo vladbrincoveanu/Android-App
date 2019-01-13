@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import com.example.paulap.crowdsourcing.ActvityHome;
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.IdpResponse;
 import com.google.firebase.auth.FirebaseAuth;
@@ -14,7 +15,6 @@ import java.util.List;
 
 import com.example.paulap.crowdsourcing.Adapters.IssueAdapter;
 import com.example.paulap.crowdsourcing.R;
-import com.example.paulap.crowdsourcing.drawer_menu;
 
 public class MainActivity extends AppCompatActivity {
 
