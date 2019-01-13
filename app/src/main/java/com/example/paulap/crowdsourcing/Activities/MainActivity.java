@@ -1,4 +1,4 @@
-package com.example.paulap.crowdsourcing;
+package com.example.paulap.crowdsourcing.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,10 @@ import com.google.firebase.auth.FirebaseUser;
 
 import java.util.Arrays;
 import java.util.List;
+
+import com.example.paulap.crowdsourcing.Adapters.IssueAdapter;
+import com.example.paulap.crowdsourcing.R;
+import com.example.paulap.crowdsourcing.drawer_menu;
 
 public class MainActivity extends AppCompatActivity {
 
