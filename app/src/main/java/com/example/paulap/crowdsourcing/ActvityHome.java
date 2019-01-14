@@ -12,6 +12,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import com.example.paulap.crowdsourcing.issue.IssueActivity;
 import com.example.paulap.crowdsourcing.event.ActivityEvents;
+import com.example.paulap.crowdsourcing.profile.ProfileActivity;
+import com.example.paulap.crowdsourcing.report.PdfReportsActivity;
 
 public class ActvityHome extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -89,9 +91,11 @@ public class ActvityHome extends AppCompatActivity
             Intent intent	=	new Intent(this, ActivityEvents.class);
             startActivity(intent);
         } else if (id == R.id.nav_manage) {
-
+            Intent intent	=	new Intent(this,PdfReportsActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_share) {
-
+            Intent intent	=	new Intent(this,ProfileActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_send) {
 
         }
