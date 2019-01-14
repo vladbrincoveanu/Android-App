@@ -14,11 +14,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.paulap.crowdsourcing.Models.Event;
+import com.example.paulap.crowdsourcing.Models.Issue;
 import com.example.paulap.crowdsourcing.home.HomeActivity;
 import com.example.paulap.crowdsourcing.issue.IssueActivity;
 import com.example.paulap.crowdsourcing.event.ActivityEvents;
 import com.example.paulap.crowdsourcing.profile.ProfileActivity;
 import com.example.paulap.crowdsourcing.report.PdfReportsActivity;
+import com.example.paulap.crowdsourcing.util.AppUtil;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -51,6 +55,14 @@ public class ActvityHome extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
         navigationView.bringToFront();
 
+
+        TextView issueTextView = findViewById(R.id.home2_issues_description);
+        Issue issue = AppUtil.issueList.get(AppUtil.issueList.size()-1);
+        issueTextView.setText(issue.getDescription());
+
+        TextView eventTextView = findViewById(R.id.home2_events_description);
+        Event event = AppUtil.eventList.get(AppUtil.eventList.size()-1);
+        eventTextView.setText(event.getTitle() + "\n" +event.getL() + "\n" + event.getData());
     }
 
     @Override
