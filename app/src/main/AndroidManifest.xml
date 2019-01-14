@@ -19,7 +19,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_api"/>
 
-        <activity android:name=".Activities.MainActivity">
+        <activity android:name=".issue.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,9 +34,9 @@
         <activity android:name=".event.ActivityEventInvite"/>
         <activity android:name=".event.ActivityEventJoin"/>
         <activity android:name=".event.ActivityCreateEvent"/>
-        <activity android:name=".Activities.IssueActivity"></activity>
-        <activity android:name=".Activities.CreateIssue"/>
-        <activity android:name=".Activities.MapActivity"/>
+        <activity android:name=".issue.IssueActivity"></activity>
+        <activity android:name=".issue.CreateIssue"/>
+        <activity android:name=".issue.MapActivity"/>
     </application>
     
 </manifest>

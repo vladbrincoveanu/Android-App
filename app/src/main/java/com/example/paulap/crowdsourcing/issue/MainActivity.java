@@ -1,4 +1,4 @@
-package com.example.paulap.crowdsourcing.Activities;
+package com.example.paulap.crowdsourcing.issue;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,7 +13,6 @@ import com.google.firebase.auth.FirebaseUser;
 import java.util.Arrays;
 import java.util.List;
 
-import com.example.paulap.crowdsourcing.Adapters.IssueAdapter;
 import com.example.paulap.crowdsourcing.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -72,6 +71,8 @@ public class MainActivity extends AppCompatActivity {
                 // sign-in flow using the back button. Otherwise check
                 // response.getError().getErrorCode() and handle the error.
                 // ...
+                Intent	intent	=	new Intent(this, ActvityHome.class);
+                startActivity(intent);
 
             }
         }

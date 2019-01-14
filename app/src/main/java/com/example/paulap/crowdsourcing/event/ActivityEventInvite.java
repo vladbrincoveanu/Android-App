@@ -63,7 +63,7 @@ public class ActivityEventInvite extends AppCompatActivity {
         }
     }
 
-    public void InviteAllFriends(View view) {
+    public void InviteAllFriends(View v) {
         StringBuilder stringBuilder = new StringBuilder();
         for (User user:this.users) {
             stringBuilder.append(user.getEmail()).append(",");
