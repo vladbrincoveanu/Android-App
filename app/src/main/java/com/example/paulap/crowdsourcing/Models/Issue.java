@@ -1,6 +1,7 @@
 package com.example.paulap.crowdsourcing.Models;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class Issue implements Serializable {
     private String title;
@@ -21,6 +22,7 @@ public class Issue implements Serializable {
     public Issue(){
 
     }
+
 
     public int getImgRes() {
         return imgRes;

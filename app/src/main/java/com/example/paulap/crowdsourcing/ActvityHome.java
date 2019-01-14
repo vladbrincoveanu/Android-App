@@ -10,7 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import com.example.paulap.crowdsourcing.Activities.IssueActivity;
+import com.example.paulap.crowdsourcing.issue.IssueActivity;
 import com.example.paulap.crowdsourcing.event.ActivityEvents;
 
 public class ActvityHome extends AppCompatActivity

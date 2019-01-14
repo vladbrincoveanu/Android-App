@@ -1,4 +1,4 @@
-package com.example.paulap.crowdsourcing.Activities;
+package com.example.paulap.crowdsourcing.issue;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,11 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
-import com.example.paulap.crowdsourcing.Adapters.IssueAdapter;
 import com.example.paulap.crowdsourcing.Models.Issue;
 import com.example.paulap.crowdsourcing.R;
-
-import java.util.ArrayList;
 
 public class CreateIssue extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
