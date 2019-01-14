@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.example.paulap.crowdsourcing.home.HomeActivity;
@@ -48,6 +49,8 @@ public class ActvityHome extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        navigationView.bringToFront();
+
     }
 
     @Override
@@ -114,5 +117,15 @@ public class ActvityHome extends AppCompatActivity
         usermail.setText(user.getEmail());
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public void seeAllIssues(View view) {
+        Intent intent	=	new Intent(this, IssueActivity.class);
+        startActivity(intent);
+    }
+
+    public void seeAllEvents(View view) {
+        Intent intent	=	new Intent(this, ActivityEvents.class);
+        startActivity(intent);
     }
 }

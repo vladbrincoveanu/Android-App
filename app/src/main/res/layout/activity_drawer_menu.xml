@@ -20,6 +20,108 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_drawer_menu"
+        android:translationZ="2dp"
         app:menu="@menu/activity_drawer_menu_drawer" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="55dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:visibility="visible"
+        android:elevation="@dimen/activity_horizontal_margin"
+        >
+
+        <ImageView
+            android:id="@+id/home2_issues_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="150dp"
+            android:maxHeight="150dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/issues" />
+
+        <TextView
+            android:id="@+id/home2_issues_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="20dp"
+            android:text="LATEST ISSUE" />
+
+        <TextView
+            android:id="@+id/home2_issues_description"
+            android:gravity="start"
+            android:layout_height="50dp"
+            android:layout_width="240dp"
+            android:maxLines="4"
+            android:lines="4"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="10dp"
+            android:text="Ceva descripere despre issues pe mai multe randuri"/>
+
+        <Button
+            android:id="@+id/home2_issues_see_all"
+            android:onClick="seeAllIssues"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="See All"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@android:color/background_light" />
+
+
+        <ImageView
+            android:id="@+id/home2_events_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="50dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="150dp"
+            android:maxHeight="150dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mountain" />
+
+        <TextView
+            android:id="@+id/home2_events_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="20dp"
+            android:text="LATEST EVENT" />
+
+        <TextView
+            android:id="@+id/home2_events_description"
+            android:gravity="start"
+            android:layout_height="50dp"
+            android:layout_width="240dp"
+            android:maxLines="4"
+            android:lines="4"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="10dp"
+            android:text="Ceva descripere despre events pe mai multe randuri"/>
+
+        <Button
+            android:id="@+id/home2_events_see_all"
+            android:onClick="seeAllEvents"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="See All"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
 
 </android.support.v4.widget.DrawerLayout>
