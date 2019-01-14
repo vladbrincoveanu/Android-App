@@ -27,12 +27,13 @@ public class ActivityEventInvite extends AppCompatActivity {
 
         InviteAdapter inviteAdapter = new InviteAdapter(this,users);
         User user = new User("Vlad","12345","gg.vladbrincoveanu@gmail.com",false);
-        User user1 = new User("Paula","12345","aaa@gmail.com",false);
-        User user2 = new User("Victor","12345","bbbb@gmail.com",false);
+        User user1 = new User("Paula","12345","paltinisanu.paula@gmail.com",false);
+        User user2 = new User("Victor","12345","almasan.victor29@gmail.com",false);
+        User user3 = new User("Andrei","12345","koszorus.andrei@gmail.com",false);
         users.add(user);
         users.add(user1);
         users.add(user2);
-        users.add(user);
+        users.add(user3);
         users.add(user);
 
         inviteAdapter.notifyDataSetChanged();

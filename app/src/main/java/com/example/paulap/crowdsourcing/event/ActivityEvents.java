@@ -33,14 +33,12 @@ public class ActivityEvents extends AppCompatActivity {
 
         events = new ArrayList<>();
         eventAdapter = new EventAdapter(this, events);
-        Event msg = new Event("Strangere fonduri", new Date().toString(), new Location(""), "Se vor colecta fundri ptr copii nevoiasi", "Fonduri");
+        Event msg = new Event("Strangere fonduri", new Date().toString(), "Cluj-Napoca Daicoviciu 34", "Se vor colecta fundri ptr copii nevoiasi", "Fonduri");
+        Event msg1 = new Event("Donatii oamenii strazi", new Date().toString(), "Cluj-Napoca Daicoviciu 34", "Scopul este de a ajuta oamenii strazii cum puteti. Cu haine, mancare, adapost etc. Orice este binevenit ", "Donati");
+        Event msg2 = new Event("Ajutor oameni cu dizabilitati", new Date().toString(), "Cluj-Napoca Daicoviciu 34", "Vrem sa ajutam oamenii cu dizabilitati de toate felurile. Acest voluntariat se intampla in fiecare zi, puteti participa venind la adresa mentionatat si vom discuta despre cum puteti ajuta si pe cine.", "Voluntariat");
         events.add(msg);
-        events.add(msg);
-        events.add(msg);
-        events.add(msg);
-        events.add(msg);
-        events.add(msg);
-        events.add(msg);
+        events.add(msg1);
+        events.add(msg2);
         events.add(msg);
 
         eventAdapter.notifyDataSetChanged();
@@ -61,7 +59,8 @@ public class ActivityEvents extends AppCompatActivity {
             String	descriere = data.getStringExtra("descriere");
             String	date = data.getStringExtra("date");
             String	category = data.getStringExtra("category");
-            Event event = new Event(title,date,new Location(""),descriere,category);
+            String	location = data.getStringExtra("location");
+            Event event = new Event(title,date,location,descriere,category);
             events.add(event);
             eventAdapter.notifyDataSetChanged();
         }else if(resultCode == Activity.RESULT_CANCELED){

@@ -7,14 +7,14 @@ import java.util.Date;
 public class Event {
     private String title;
     private String data;
-    private Location l;
+    private String location;
     private String goal;
     private String category;
 
-    public Event(String title,String data, Location l, String goal, String category) {
+    public Event(String title,String data, String location, String goal, String category) {
         this.title =title;
         this.data = data;
-        this.l = l;
+        this.location = location;
         this.goal = goal;
         this.category = category;
     }
@@ -35,12 +35,12 @@ public class Event {
         this.data = data;
     }
 
-    public Location getL() {
-        return l;
+    public String getL() {
+        return location;
     }
 
-    public void setL(Location l) {
-        this.l = l;
+    public void setL(String l) {
+        this.location = l;
     }
 
     public String getGoal() {

@@ -3,12 +3,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-	<TextView
-			android:text="Daate Of Event"
-			android:layout_width="wrap_content"
+	<android.support.design.widget.TextInputEditText
+			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:id="@+id/textView4" android:layout_centerHorizontal="true"
-			android:textSize="18sp" android:layout_alignParentTop="true" android:layout_marginTop="213dp"/>
+			android:hint='"Location"' android:id="@+id/locationCreateEvent"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentTop="true" android:layout_marginTop="211dp"/>
 	<TextView
 			android:text="Create Event"
 			android:layout_width="wrap_content"
@@ -31,7 +31,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_alignParentStart="true" android:layout_alignParentTop="true"
-			android:layout_marginTop="159dp">
+			android:layout_marginTop="145dp">
 
 		<android.support.design.widget.TextInputEditText
 				android:layout_width="match_parent"
@@ -40,7 +40,7 @@
 	</android.support.design.widget.TextInputLayout>
 	<CalendarView
 			android:layout_width="wrap_content"
-			android:layout_height="209dp"
+			android:layout_height="242dp"
 			android:layout_alignParentBottom="true" android:id="@+id/dateCreateEvent"
 			android:layout_centerHorizontal="true" android:layout_marginBottom="199dp"/>
 	<Spinner

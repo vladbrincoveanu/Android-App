@@ -33,6 +33,8 @@ public class ActivityEventJoin extends AppCompatActivity {
         descriere.setText(myIntent.getStringExtra("data"));
         TextView category = (TextView) findViewById(R.id.categoryEventJoined);
         category.setText(myIntent.getStringExtra("category"));
+        TextView location = (TextView) findViewById(R.id.locationEventJoined);
+        location.setText(myIntent.getStringExtra("location"));
 
         final Toast toast = Toast.makeText(this, "You have joined the event",
                 Toast.LENGTH_SHORT);

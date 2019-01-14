@@ -4,6 +4,25 @@
                 android:layout_height="match_parent">
 
 	<TextView
+			android:layout_width="176dp"
+			android:clickable="false"
+			android:layout_height="32dp"
+			android:inputType="date"
+			android:ems="10"
+			android:id="@+id/locationEventJoined"
+			android:layout_alignEnd="@+id/descriptionEventJoined"
+			android:layout_alignTop="@+id/editText3"/>
+	<TextView
+			android:layout_width="87dp"
+			android:layout_height="32dp"
+			android:inputType="textPersonName"
+			android:text="Location"
+			android:ems="10"
+			android:clickable="false"
+			android:id="@+id/editText3"
+			android:layout_alignParentBottom="true" android:layout_marginBottom="89dp"
+			android:layout_alignStart="@+id/editText"/>
+	<TextView
 			android:layout_width="87dp"
 			android:layout_height="36dp"
 			android:inputType="textPersonName"
@@ -11,7 +30,8 @@
 			android:ems="10"
 			android:clickable="false"
 			android:id="@+id/editText"
-			android:layout_alignTop="@+id/dateEventJoined" android:layout_alignStart="@+id/descriptionEventJoined"/>
+			android:layout_alignStart="@+id/editText2" android:layout_alignParentBottom="true"
+			android:layout_marginBottom="224dp"/>
 	<TextView
 			android:layout_width="87dp"
 			android:layout_height="32dp"
@@ -20,8 +40,8 @@
 			android:ems="10"
 			android:clickable="false"
 			android:id="@+id/editText2"
-			android:layout_alignParentBottom="true" android:layout_marginBottom="169dp"
-			android:layout_alignStart="@+id/editText"/>
+			android:layout_alignParentBottom="true" android:layout_marginBottom="161dp"
+			android:layout_toStartOf="@+id/titleEventJoined"/>
 	<TextView
 			android:text=" "
 			android:clickable="false"
@@ -35,7 +55,7 @@
 			android:layout_height="288dp" app:srcCompat="@drawable/eventimg"
 			android:id="@+id/imageEventJoined"
 			android:layout_alignParentStart="true"
-			android:layout_alignParentTop="true" android:layout_marginTop="82dp"/>
+			android:layout_below="@+id/titleEventJoined"/>
 	<TextView
 			android:text="TextView"
 			android:clickable="false"
@@ -50,8 +70,8 @@
 			android:inputType="date"
 			android:ems="10"
 			android:id="@+id/dateEventJoined"
-			android:layout_alignEnd="@+id/descriptionEventJoined" android:layout_alignParentBottom="true"
-			android:layout_marginBottom="240dp"/>
+			android:layout_alignEnd="@+id/descriptionEventJoined"
+			android:layout_alignBottom="@+id/editText"/>
 	<!--<EditText-->
 			<!--android:layout_width="69dp"-->
 			<!--android:layout_height="wrap_content"-->
@@ -63,8 +83,8 @@
 			<!--android:layout_marginBottom="249dp"/>-->
 	<TextView
 			android:layout_width="172dp"
-			android:layout_height="38dp" android:layout_alignParentBottom="true"
-			android:id="@+id/categoryEventJoined" android:layout_marginBottom="171dp"
-			android:layout_alignStart="@+id/dateEventJoined"/>
+			android:layout_height="38dp"
+			android:id="@+id/categoryEventJoined"
+			android:layout_alignEnd="@+id/descriptionEventJoined" android:layout_alignTop="@+id/editText2"/>
 
 </RelativeLayout>

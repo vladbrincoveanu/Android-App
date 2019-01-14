@@ -80,17 +80,19 @@ public class ActivityCreateEvent extends AppCompatActivity implements AdapterVie
     public void CreateEvent(View view) {
         String titlu = ((EditText) findViewById(R.id.titleCreateEvent)).getText().toString();
         String descriere = ((EditText) findViewById(R.id.descriptionCreateEvent)).getText().toString();
+        String location = ((EditText) findViewById(R.id.locationCreateEvent)).getText().toString();
         final CalendarView calendarView = findViewById(R.id.dateCreateEvent);
         Toast.makeText(getApplicationContext(), calendarView.toString(), Toast.LENGTH_LONG).show();
         final String date = this.date.toString();
         String category = this.category;
 
         if(titlu.matches("") || descriere.matches("")||
-              date.matches("") || category.matches("")){
+              date.matches("") || category.matches("") || location.matches("")){
             Toast.makeText(this, "Every field is required before save!", Toast.LENGTH_SHORT).show();
         }else{
             Intent returnIntent	=	new	Intent();
             returnIntent.putExtra("titlu",titlu);
+            returnIntent.putExtra("location",location);
             returnIntent.putExtra("descriere",descriere);
             returnIntent.putExtra("date", date);
             returnIntent.putExtra("category",category);
