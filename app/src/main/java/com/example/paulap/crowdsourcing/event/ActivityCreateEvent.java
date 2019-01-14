@@ -6,7 +6,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.*;
+
+import com.example.paulap.crowdsourcing.Models.Event;
 import com.example.paulap.crowdsourcing.R;
+import com.example.paulap.crowdsourcing.util.AppUtil;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -95,6 +98,7 @@ public class ActivityCreateEvent extends AppCompatActivity implements AdapterVie
             returnIntent.putExtra("descriere",descriere);
             returnIntent.putExtra("date", date);
             returnIntent.putExtra("category",category);
+            AppUtil.eventList.add(new Event(titlu, date, location,"goal", category));
 //            returnIntent.putExtra("titlu",((TextView) findViewById(R.id.titleCreateEvent)).getText());
             setResult(Activity.RESULT_OK, returnIntent);
             finish();
