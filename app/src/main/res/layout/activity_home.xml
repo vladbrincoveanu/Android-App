@@ -11,7 +11,7 @@
     android:visibility="visible">
 
     <ImageView
-        android:id="@+id/reports_issues_image"
+        android:id="@+id/home_issues_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -23,7 +23,15 @@
         android:src="@drawable/issues" />
 
     <TextView
-        android:id="@+id/reports_issues_description"
+        android:id="@+id/home_issues_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+        android:text="LATEST ISSUE" />
+
+    <TextView
+        android:id="@+id/home_issues_description"
         android:gravity="start"
         android:layout_height="50dp"
         android:layout_width="240dp"
@@ -34,20 +42,20 @@
         android:text="Ceva descripere despre issues pe mai multe randuri"/>
 
     <Button
-        android:id="@+id/reports_issues_export"
-        android:onClick="exportIssuesPdf"
+        android:id="@+id/home_issues_see_all"
+        android:onClick="seeAllIssues"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="125dp"
         android:layout_marginTop="15dp"
         android:background="@color/colorPrimaryDark"
-        android:text="Export PDF"
+        android:text="See All"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@android:color/background_light" />
 
 
     <ImageView
-        android:id="@+id/reports_events_image"
+        android:id="@+id/home_events_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -56,10 +64,18 @@
         android:maxWidth="150dp"
         android:maxHeight="150dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/eventimg" />
+        android:src="@drawable/mountain" />
 
     <TextView
-        android:id="@+id/reports_events_description"
+        android:id="@+id/home_events_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+        android:text="LATEST EVENT" />
+
+    <TextView
+        android:id="@+id/home_events_description"
         android:gravity="start"
         android:layout_height="50dp"
         android:layout_width="240dp"
@@ -70,14 +86,14 @@
         android:text="Ceva descripere despre events pe mai multe randuri"/>
 
     <Button
-        android:id="@+id/reports_events_export"
-        android:onClick="exportEventsPdf"
+        android:id="@+id/home_events_see_all"
+        android:onClick="seeAllEvents"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="125dp"
         android:layout_marginTop="15dp"
         android:background="@color/colorPrimaryDark"
-        android:text="Export PDF"
+        android:text="See All"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@android:color/background_light" />
 </LinearLayout>

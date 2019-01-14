@@ -10,6 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.example.paulap.crowdsourcing.home.HomeActivity;
 import com.example.paulap.crowdsourcing.issue.IssueActivity;
 import com.example.paulap.crowdsourcing.event.ActivityEvents;
 import com.example.paulap.crowdsourcing.profile.ProfileActivity;
@@ -83,7 +85,8 @@ public class ActvityHome extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
+            Intent intent	=	new Intent(this, HomeActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_gallery) {
             Intent intent	=	new Intent(this, IssueActivity.class);
             startActivity(intent);
