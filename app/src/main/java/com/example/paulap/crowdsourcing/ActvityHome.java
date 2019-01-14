@@ -11,11 +11,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import android.widget.TextView;
+import android.widget.Toast;
 import com.example.paulap.crowdsourcing.home.HomeActivity;
 import com.example.paulap.crowdsourcing.issue.IssueActivity;
 import com.example.paulap.crowdsourcing.event.ActivityEvents;
 import com.example.paulap.crowdsourcing.profile.ProfileActivity;
 import com.example.paulap.crowdsourcing.report.PdfReportsActivity;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class ActvityHome extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -72,6 +76,7 @@ public class ActvityHome extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Toast.makeText(this,"Ha ha ha no settings!",Toast.LENGTH_SHORT);
             return true;
         }
 
@@ -104,6 +109,9 @@ public class ActvityHome extends AppCompatActivity
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        TextView usermail = findViewById(R.id.userMail);
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        usermail.setText(user.getEmail());
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
