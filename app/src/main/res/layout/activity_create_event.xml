@@ -8,30 +8,29 @@
 			android:layout_height="wrap_content"
 			android:hint='"Location"' android:id="@+id/locationCreateEvent"
 			android:layout_alignParentStart="true"
-			android:layout_alignParentTop="true" android:layout_marginTop="211dp"/>
+			android:layout_alignParentTop="true" android:layout_marginTop="181dp"/>
 	<TextView
 			android:text="Create Event"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_alignParentTop="true" android:layout_marginTop="18dp" android:id="@+id/textview232"
+			android:layout_alignParentTop="true" android:id="@+id/textview232"
 			android:layout_centerHorizontal="true" android:textColor="@android:color/holo_blue_dark"
 			android:textSize="24sp"/>
 	<android.support.design.widget.TextInputLayout
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_alignParentStart="true" android:layout_alignParentTop="true"
-			android:layout_marginTop="81dp">
+			android:layout_marginTop="52dp">
 
 		<android.support.design.widget.TextInputEditText
 				android:layout_width="429dp"
-				android:layout_height="wrap_content"
-				android:hint='"title"' android:id="@+id/titleCreateEvent"/>
+				android:hint='"title"' android:id="@+id/titleCreateEvent" android:layout_height="wrap_content"/>
 	</android.support.design.widget.TextInputLayout>
 	<android.support.design.widget.TextInputLayout
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_alignParentStart="true" android:layout_alignParentTop="true"
-			android:layout_marginTop="145dp">
+			android:layout_marginTop="116dp">
 
 		<android.support.design.widget.TextInputEditText
 				android:layout_width="match_parent"
@@ -40,23 +39,23 @@
 	</android.support.design.widget.TextInputLayout>
 	<CalendarView
 			android:layout_width="wrap_content"
-			android:layout_height="242dp"
+			android:layout_height="250dp"
 			android:layout_alignParentBottom="true" android:id="@+id/dateCreateEvent"
-			android:layout_centerHorizontal="true" android:layout_marginBottom="199dp"/>
+			android:layout_centerHorizontal="true" android:layout_marginBottom="160dp"/>
 	<Spinner
 			android:id="@+id/categoryCreateEvent"
 			android:layout_width="349dp"
 			android:layout_height="wrap_content"
 			android:background="@android:drawable/btn_dropdown"
 			android:spinnerMode="dropdown"
-			android:layout_alignParentBottom="true" android:layout_marginBottom="91dp"
+			android:layout_alignParentBottom="true" android:layout_marginBottom="79dp"
 			android:layout_centerHorizontal="true"/>
 	<TextView
 			android:text="Category"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:id="@+id/textView3" android:layout_centerHorizontal="true"
-			android:textSize="18sp" android:layout_alignParentBottom="true" android:layout_marginBottom="164dp"/>
+			android:textSize="18sp" android:layout_above="@+id/categoryCreateEvent"/>
 	<Button
 			android:text="Create"
 			android:layout_width="wrap_content"

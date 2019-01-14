@@ -82,8 +82,7 @@ public class ActivityCreateEvent extends AppCompatActivity implements AdapterVie
         String descriere = ((EditText) findViewById(R.id.descriptionCreateEvent)).getText().toString();
         String location = ((EditText) findViewById(R.id.locationCreateEvent)).getText().toString();
         final CalendarView calendarView = findViewById(R.id.dateCreateEvent);
-        Toast.makeText(getApplicationContext(), calendarView.toString(), Toast.LENGTH_LONG).show();
-        final String date = this.date.toString();
+        final String date = this.date == null ? new Date(calendarView.getDate()).toString() : this.date.toString();
         String category = this.category;
 
         if(titlu.matches("") || descriere.matches("")||
