@@ -1,9 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".report.PdfReportsActivity">
+    android:background="@drawable/final_login_jesusssss"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:visibility="visible">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/reports_issues_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="150dp"
+        android:maxHeight="150dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/issues" />
+
+    <TextView
+        android:id="@+id/reports_issues_description"
+        android:gravity="start"
+        android:layout_height="50dp"
+        android:layout_width="240dp"
+        android:maxLines="4"
+        android:lines="4"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:text="Ceva descripere despre issues pe mai multe randuri"/>
+
+    <Button
+        android:id="@+id/reports_issues_export"
+        android:onClick="exportIssuesPdf"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Export PDF"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light" />
+
+
+    <ImageView
+        android:id="@+id/reports_events_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="150dp"
+        android:maxHeight="150dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/eventimg" />
+
+    <TextView
+        android:id="@+id/reports_events_description"
+        android:gravity="start"
+        android:layout_height="50dp"
+        android:layout_width="240dp"
+        android:maxLines="4"
+        android:lines="4"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:text="Ceva descripere despre events pe mai multe randuri"/>
+
+    <Button
+        android:id="@+id/reports_events_export"
+        android:onClick="exportEventsPdf"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Export PDF"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light" />
+</LinearLayout>
