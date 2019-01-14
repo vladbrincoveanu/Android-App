@@ -41,7 +41,8 @@
         android:text="Category 3:"
         android:textSize="16sp"
         tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="558dp" />
+        tools:layout_editor_absoluteY="558dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView17"
@@ -127,7 +128,8 @@
         android:layout_height="wrap_content"
         android:text="Below, enter 3 categories of answers."
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="368dp" />
+        tools:layout_editor_absoluteY="368dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView16"

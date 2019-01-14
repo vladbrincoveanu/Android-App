@@ -22,5 +22,6 @@
         <item>Transport</item>
     </string-array>
     <string name="google_maps_api">AIzaSyBio6hgUJ827TGfEMQUOWJevZ0obryAaOM</string>
+    <string name="vote">Vote</string>
 
 </resources>
