@@ -11,6 +11,7 @@ import android.widget.Spinner;
 
 import com.example.paulap.crowdsourcing.Models.Issue;
 import com.example.paulap.crowdsourcing.R;
+import com.example.paulap.crowdsourcing.util.AppUtil;
 
 public class CreateIssue extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,7 @@ public class CreateIssue extends AppCompatActivity {
                 Intent intent = new Intent(CreateIssue.this,IssueActivity.class);
                 String category = categories.getSelectedItem().toString();
 
+                AppUtil.issueList.add(new Issue(issueTitle.getText().toString(),issueDescription.getText().toString(),issueSolution.getText().toString(),category,0,R.drawable.mountain));
                 intent.putExtra("Issue",new Issue(issueTitle.getText().toString(),issueDescription.getText().toString(),issueSolution.getText().toString(),category,0,R.drawable.mountain));
                 startActivity(intent);
             }

@@ -11,6 +11,7 @@ import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import com.example.paulap.crowdsourcing.Models.Event;
 import com.example.paulap.crowdsourcing.Models.Issue;
@@ -18,6 +19,7 @@ import com.example.paulap.crowdsourcing.R;
 import com.example.paulap.crowdsourcing.report.HeaderFooter;
 import com.example.paulap.crowdsourcing.report.PDFCreatorForEvents;
 import com.example.paulap.crowdsourcing.report.PDFCreatorForIssues;
+import com.example.paulap.crowdsourcing.util.AppUtil;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.PageSize;
@@ -42,6 +44,14 @@ public class PdfReportsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pdf_reports);
+
+        TextView issueTextView = findViewById(R.id.reports_issues_description);
+        Issue issue = AppUtil.issueList.get(AppUtil.issueList.size()-1);
+        issueTextView.setText(issue.getDescription());
+
+        TextView eventTextView = findViewById(R.id.reports_events_description);
+        Event event = AppUtil.eventList.get(AppUtil.eventList.size()-1);
+        eventTextView.setText(event.getTitle() + "\n" +event.getL() + "\n" + event.getData());
     }
 
     public void exportIssuesPdf(View view) {
@@ -117,10 +127,14 @@ public class PdfReportsActivity extends AppCompatActivity {
         Location loc2 = new Location("");
         loc2.setLatitude(0.0d);
         loc2.setLongitude(0.0d);
-        Event event1 = new Event("Title1","2018-11-11 11:11:11", "loc1","goal1", "category");
-        Event event2 = new Event("Title2", "2018-11-11 11:11:12", "loc1","goal2", "category2");
-        events.add(event1);
-        events.add(event2);
+
+        new Event("Strangere fonduri", new Date().toString(), "Cluj-Napoca Daicoviciu 34", "Se vor colecta fundri ptr copii nevoiasi", "Fonduri");
+        new Event("Donatii oamenii strazi", new Date().toString(), "Cluj-Napoca Daicoviciu 34", "Scopul este de a ajuta oamenii strazii cum puteti. Cu haine, mancare, adapost etc. Orice este binevenit ", "Donati");
+        new Event("Ajutor oameni cu dizabilitati", new Date().toString(), "Cluj-Napoca Daicoviciu 34", "Vrem sa ajutam oamenii cu dizabilitati de toate felurile. Acest voluntariat se intampla in fiecare zi, puteti participa venind la adresa mentionatat si vom discuta despre cum puteti ajuta si pe cine.", "Voluntariat");
+
+        events.add(new Event("Strangere fonduri", new Date().toString(), "Cluj-Napoca Daicoviciu 34", "Se vor colecta fundri ptr copii nevoiasi", "Fonduri"));
+        events.add(new Event("Donatii oamenii strazi", new Date().toString(), "Cluj-Napoca Daicoviciu 34", "Scopul este de a ajuta oamenii strazii cum puteti. Cu haine, mancare, adapost etc. Orice este binevenit ", "Donati"));
+        events.add(new Event("Ajutor oameni cu dizabilitati", new Date().toString(), "Cluj-Napoca Daicoviciu 34", "Vrem sa ajutam oamenii cu dizabilitati de toate felurile. Acest voluntariat se intampla in fiecare zi, puteti participa venind la adresa mentionatat si vom discuta despre cum puteti ajuta si pe cine.", "Voluntariat"));
 
         try {
             File folder = new File(this.getFilesDir(), "pdf");
